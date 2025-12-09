@@ -1,10 +1,9 @@
 ---
 tags:
-  - US
-  - Operator
-  - Cybersecurity
+- cybersecurity
+- operator
+- us
 ---
-
 # Cybersecurity Enhancement Act
 
 The Cybersecurity Enhancement Act of 2014 is a United States Public Law

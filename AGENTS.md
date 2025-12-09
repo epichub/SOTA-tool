@@ -208,3 +208,57 @@ uv add <package_name>
 
 
 
+
+## 2025-12-09 10:15: Cleanup Navigation Structure
+**Agent**: GitHub Copilot CLI
+**Task**: Refactor MkDocs navigation to be less verbose and support collapsible sections, matching the original Sphinx site behavior.
+
+**Changes**:
+1.  **Configuration**:
+    *   Added `navigation.indexes` to `theme.features` in `mkdocs.yml`. This allows section titles to be clickable links to index pages.
+2.  **Navigation Refactoring**:
+    *   Rewrote the `nav` section in `mkdocs.yml` to remove redundant parent keys.
+    *   Example: Changed `- Manufacturers: content/manufacturers/manufacturer.md` to just `- content/manufacturers/manufacturer.md` (where appropriate) or structured it so the index page serves as the section title.
+    *   This eliminates the "exploded" view where every section had a duplicate label and ensures the menu is collapsible by default.
+
+## 2025-12-09 10:30: Implement Section Index Pages
+**Agent**: GitHub Copilot CLI
+**Task**: Rename section landing pages to `index.md` to support MkDocs Material's section index pages feature, reducing visual noise in the navigation menu.
+
+**Changes**:
+1.  **File Renaming**:
+    *   Renamed `docs/content/manufacturers/manufacturer.md` to `docs/content/manufacturers/index.md`.
+    *   Renamed `docs/content/manufacturers/invitro.md` to `docs/content/manufacturers/invitro/index.md`.
+    *   Renamed `docs/content/manufacturers/medicaldevice.md` to `docs/content/manufacturers/medical_device/index.md`.
+    *   Renamed `docs/content/operators/operator.md` to `docs/content/operators/index.md`.
+    *   Renamed `docs/content/operators/invitro.md` to `docs/content/operators/invitro/index.md`.
+    *   Renamed `docs/content/operators/medical_device.md` to `docs/content/operators/medical_device/index.md`.
+    *   Renamed regional landing pages (e.g., `eu.md`, `uk.md`, `no.md`, `us.md`) to `index.md` within their respective directories.
+2.  **Configuration Update**:
+    *   Updated `mkdocs.yml` navigation paths to point to the new `index.md` files.
+    *   This allows the section title in the navigation menu to be clickable and lead directly to the index page, eliminating the need for a separate "Overview" or duplicate link.
+
+## 2025-12-09 10:45: Fix Broken Links in Index Pages
+**Agent**: GitHub Copilot CLI
+**Task**: Fix broken relative links in section index pages caused by file restructuring.
+
+**Changes**:
+1.  **Link Updates**:
+    *   Updated links in `docs/content/manufacturers/invitro/index.md` to point to regional index pages (e.g., `eu/index.md`).
+    *   Updated links in `docs/content/manufacturers/medical_device/index.md` to point to regional index pages.
+    *   Updated links in `docs/content/operators/index.md` to point to device type index pages.
+    *   Updated links in `docs/content/operators/medical_device/index.md` to point to regional index pages.
+    *   Verified links in regional index pages.
+
+## 2025-12-09 11:00: Standardize Tags
+**Agent**: GitHub Copilot CLI
+**Task**: Standardize all tags to lowercase to avoid duplicates (e.g., "Cybersecurity" vs "cybersecurity").
+
+**Changes**:
+1.  **Tag Standardization**:
+    *   Created and ran `standardize_tags.py` to scan all markdown files in `docs/content/`.
+    *   Converted all tags in YAML front matter to lowercase.
+    *   Removed duplicate tags within files.
+2.  **Tags Page Update**:
+    *   Updated `docs/tags.md` to include anchors for all standardized lowercase tags.
+    *   Ensured all tags have a corresponding `<div id="tag:..."></div>` element.

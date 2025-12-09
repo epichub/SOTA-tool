@@ -1,9 +1,8 @@
 ---
 tags:
-  - privacy
-  - data protection
+- data protection
+- privacy
 ---
-
 # General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data*
 
 At the EU level, the 2016/679 GDPR sets out the rules on how personal

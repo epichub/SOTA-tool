@@ -1,9 +1,8 @@
 ---
 tags:
-  - US
-  - Manufacturer
+- manufacturer
+- us
 ---
-
 # Consolidated Appropriations Act
 
 Ensuring Cybersecurity of Medical Devices of the Consolidated

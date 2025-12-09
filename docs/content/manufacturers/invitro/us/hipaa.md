@@ -1,10 +1,9 @@
 ---
 tags:
-  - US
-  - data protection
-  - privacy
+- data protection
+- privacy
+- us
 ---
-
 # Health Insurance Portability and Accountability Act of 1996 (HIPAA)
 
 Legislation that covers data protection that was signed into law in 1996

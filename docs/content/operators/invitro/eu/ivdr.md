@@ -1,9 +1,8 @@
 ---
 tags:
-  - IVDR
-  - EU
+- eu
+- ivdr
 ---
-
 # In Vitro Diagnostic Device Regulation (IVDR) *Regulation (EU) 2017/746 on in vitro diagnostic medical devices*
 
 The In vitro Diagnostic Device Regulation (IVDR) is an EU regulation for

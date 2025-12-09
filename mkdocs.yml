@@ -8,8 +8,11 @@ theme:
   logo: logo.png
   features:
     - navigation.tabs
-    - navigation.sections
-    - toc.integrate
+    #- navigation.sections
+    - navigation.indexes
+    #- navigation.expand
+    - navigation.path
+    #- toc.integrate
   palette:
     - scheme: default
       primary: indigo
@@ -46,14 +49,12 @@ extra_css:
   - stylesheets/extra.css
 nav:
 - Home: index.md
-- About: content/about.md
-- Tags: tags.md
 - Manufacturers:
-  - Manufacturers: content/manufacturers/manufacturer.md
+  - content/manufacturers/index.md
   - In Vitro Medical Devices:
-    - In Vitro Medical Devices: content/manufacturers/invitro.md
+    - content/manufacturers/invitro/index.md
     - Eu:
-      - Eu: content/manufacturers/invitro/eu/eu.md
+      - content/manufacturers/invitro/eu/index.md
       - In Vitro Diagnostic Device Regulation (IVDR) *Regulation (EU) 2017/746 on in vitro diagnostic medical devices*: content/manufacturers/invitro/eu/ivdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -70,7 +71,7 @@ nav:
       - ISO/IEC 27701:2019 *Security techniques*: content/manufacturers/invitro/eu/standards/iso_iec_27701.md
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/manufacturers/invitro/eu/guidelines/mdcg.md
     - Uk:
-      - Uk: content/manufacturers/invitro/uk/uk.md
+      - content/manufacturers/invitro/uk/index.md
       - In Vitro Diagnostic Device Regulation (IVDR) *Regulation (EU) 2017/746 on in vitro diagnostic medical devices*: content/manufacturers/invitro/eu/ivdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -89,7 +90,7 @@ nav:
       - ISO/IEC 27701:2019 *Security techniques*: content/manufacturers/invitro/uk/standards/iso_iec_27701.md
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/manufacturers/invitro/eu/guidelines/mdcg.md
     - Norway:
-      - Norway: content/manufacturers/invitro/norway/no.md
+      - content/manufacturers/invitro/norway/index.md
       - In Vitro Diagnostic Device Regulation (IVDR) *Regulation (EU) 2017/746 on in vitro diagnostic medical devices*: content/manufacturers/invitro/eu/ivdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -107,7 +108,7 @@ nav:
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/manufacturers/invitro/eu/guidelines/mdcg.md
       - 'NORMEN: *Code of conduct for information security and data protection in the healthcare and care services sector*': content/manufacturers/invitro/norway/normen.md
     - Us:
-      - Us: content/manufacturers/invitro/us/us.md
+      - content/manufacturers/invitro/us/index.md
       - The Food, Drug, and Cosmetic Act (FD&C Act): content/manufacturers/invitro/us/fda.md
       - Health Insurance Portability and Accountability Act of 1996 (HIPAA): content/manufacturers/invitro/us/hipaa.md
       - ISO 13485:2016 *Medical devices — Quality management systems — Requirements for regulatory purposes*: content/manufacturers/invitro/us/standards/iso_13485_2016.md
@@ -123,9 +124,9 @@ nav:
       - Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software *Guidance for Industry*: content/manufacturers/invitro/us/fda_2005.md
       - 'Device Advice: Comprehensive Regulatory Assistance': content/manufacturers/invitro/us/device_advice.md
   - Medical Devices:
-    - Medical Devices: content/manufacturers/medicaldevice.md
+    - content/manufacturers/medical_device/index.md
     - Eu:
-      - Eu: content/manufacturers/medical_device/eu/eu.md
+      - content/manufacturers/medical_device/eu/index.md
       - Medical Device Regulation (MDR) *Regulation (EU) 2017/745 on medical devices*: content/manufacturers/medical_device/eu/mdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -142,7 +143,7 @@ nav:
       - ISO/IEC 27701:2019 *Security techniques*: content/manufacturers/medical_device/eu/standards/iso_iec_27701.md
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/manufacturers/medical_device/eu/guidelines/mdcg.md
     - Uk:
-      - Uk: content/manufacturers/medical_device/uk/uk.md
+      - content/manufacturers/medical_device/uk/index.md
       - Medical Device Regulation (MDR) *Regulation (EU) 2017/745 on medical devices*: content/manufacturers/medical_device/eu/mdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -161,7 +162,7 @@ nav:
       - ISO/IEC 27701:2019 *Security techniques*: content/manufacturers/medical_device/uk/standards/iso_iec_27701.md
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/manufacturers/medical_device/eu/guidelines/mdcg.md
     - Norway:
-      - Norway: content/manufacturers/medical_device/norway/no.md
+      - content/manufacturers/medical_device/norway/index.md
       - Medical Device Regulation (MDR) *Regulation (EU) 2017/745 on medical devices*: content/manufacturers/medical_device/eu/mdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -179,7 +180,7 @@ nav:
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/manufacturers/medical_device/eu/guidelines/mdcg.md
       - 'NORMEN: *Code of conduct for information security and data protection in the healthcare and care services sector*': content/manufacturers/medical_device/norway/normen.md
     - Us:
-      - Us: content/manufacturers/medical_device/us/us.md
+      - content/manufacturers/medical_device/us/index.md
       - The Food, Drug, and Cosmetic Act (FD&C Act): content/manufacturers/medical_device/us/fda.md
       - The Health Insurance Portability and Accountability Act (HIPAA): content/manufacturers/medical_device/us/hipaa.md
       - ISO 13485:2016 *Medical devices — Quality management systems — Requirements for regulatory purposes*: content/manufacturers/medical_device/us/standards/iso_13485_2016.md
@@ -195,18 +196,18 @@ nav:
       - Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software *Guidance for Industry*: content/manufacturers/medical_device/us/fda_2005.md
       - 'Device Advice: Comprehensive Regulatory Assistance': content/manufacturers/medical_device/us/device_advice.md
   - Classification of medical devices:
-    - Classification of medical devices: content/manufacturers/classification.md
+    - content/manufacturers/classification.md
     - MDCG 2021-24 *Guidance on classification of medical devices*: content/manufacturers/mdcg_classification.md
     - Medical device classification - FDA overview: content/manufacturers/fda_classification.md
     - ? 'The 510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications
         [510(k)] *Guidance for Industry and Food and Drug Administration Staff*'
       : content/manufacturers/510_program_premarket_not.md
 - Operators:
-  - Operators: content/operators/operator.md
+  - content/operators/index.md
   - In Vitro Medical Devices:
-    - In Vitro Medical Devices: content/operators/invitro.md
+    - content/operators/invitro/index.md
     - Eu:
-      - Eu: content/operators/invitro/eu/eu.md
+      - content/operators/invitro/eu/index.md
       - In Vitro Diagnostic Device Regulation (IVDR) *Regulation (EU) 2017/746 on in vitro diagnostic medical devices*: content/operators/invitro/eu/ivdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -224,7 +225,7 @@ nav:
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/operators/invitro/eu/guidelines/mdcg.md
       - European action plan on the cybersecurity of hospitals and healthcare providers: content/operators/invitro/eu/eu_action_plan.md
     - Uk:
-      - Uk: content/operators/invitro/uk/uk.md
+      - content/operators/invitro/uk/index.md
       - In Vitro Diagnostic Device Regulation (IVDR) *Regulation (EU) 2017/746 on in vitro diagnostic medical devices*: content/operators/invitro/eu/ivdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -243,7 +244,7 @@ nav:
       - ISO/IEC 27701:2019 *Security techniques*: content/operators/invitro/uk/standards/iso_iec_27701.md
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/operators/invitro/eu/guidelines/mdcg.md
     - Norway:
-      - Norway: content/operators/invitro/norway/no.md
+      - content/operators/invitro/norway/index.md
       - In Vitro Diagnostic Device Regulation (IVDR) *Regulation (EU) 2017/746 on in vitro diagnostic medical devices*: content/operators/invitro/eu/ivdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -261,7 +262,7 @@ nav:
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/operators/invitro/eu/guidelines/mdcg.md
       - 'NORMEN: *Code of conduct for information security and data protection in the healthcare and care services sector*': content/operators/invitro/norway/normen.md
     - Us:
-      - Us: content/operators/invitro/us/us.md
+      - content/operators/invitro/us/index.md
       - The Food, Drug, and Cosmetic Act (FD&C Act): content/operators/invitro/us/fda.md
       - Health Insurance Portability and Accountability Act of 1996 (HIPAA): content/operators/invitro/us/hipaa.md
       - ISO 13485:2016 *Medical devices — Quality management systems — Requirements for regulatory purposes*: content/operators/invitro/us/standards/iso_13485_2016.md
@@ -274,9 +275,9 @@ nav:
       - Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software *Guidance for Industry*: content/operators/invitro/us/fda_2005.md
       - International Medical Device Regulators Forum (IMDRF) *Principles and Practices for Medical Device Cybersecurity*: content/operators/invitro/us/imdrf_2020.md
   - Medical Devices:
-    - Medical Devices: content/operators/medical_device.md
+    - content/operators/medical_device/index.md
     - Eu:
-      - Eu: content/operators/medical_device/eu/eu.md
+      - content/operators/medical_device/eu/index.md
       - Medical Device Regulation (MDR) *Regulation (EU) 2017/745 on medical devices*: content/operators/medical_device/eu/mdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -294,7 +295,7 @@ nav:
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/operators/medical_device/eu/guidelines/mdcg.md
       - European action plan on the cybersecurity of hospitals and healthcare providers: content/operators/medical_device/eu/eu_action_plan.md
     - Uk:
-      - Uk: content/operators/medical_device/uk/uk.md
+      - content/operators/medical_device/uk/index.md
       - Medical Device Regulation (MDR) *Regulation (EU) 2017/745 on medical devices*: content/operators/medical_device/eu/mdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -313,7 +314,7 @@ nav:
       - ISO/IEC 27701:2019 *Security techniques*: content/operators/medical_device/uk/standards/iso_iec_27701.md
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/operators/medical_device/eu/guidelines/mdcg.md
     - Norway:
-      - Norway: content/operators/medical_device/norway/no.md
+      - content/operators/medical_device/norway/index.md
       - Medical Device Regulation (MDR) *Regulation (EU) 2017/745 on medical devices*: content/operators/medical_device/eu/mdr.md
       - ? General Data Protection Regulation (GDPR) *Regulation 2016/679 on the protection
           of natural persons with regard to the processing of personal data and on
@@ -331,7 +332,7 @@ nav:
       - 'MDCG 2019-16 *Medical Device Coordination Group: Guidance on Cybersecurity for medical devices*': content/operators/medical_device/eu/guidelines/mdcg.md
       - 'NORMEN: *Code of conduct for information security and data protection in the healthcare and care services sector*': content/operators/medical_device/norway/normen.md
     - Us:
-      - Us: content/operators/medical_device/us/us.md
+      - content/operators/medical_device/us/index.md
       - The Food, Drug, and Cosmetic Act (FD&C Act): content/operators/medical_device/us/fda.md
       - The Health Insurance Portability and Accountability Act (HIPAA): content/operators/medical_device/us/hipaa.md
       - ISO 13485:2016 *Medical devices — Quality management systems — Requirements for regulatory purposes*: content/operators/medical_device/us/standards/iso_13485_2016.md
@@ -340,7 +341,11 @@ nav:
           - Information Security Management Systems - Requirements*
         : content/operators/medical_device/us/standards/iso_iec_27001.md
       - ISO/IEC 27701:2019 *Security techniques*: content/operators/medical_device/us/standards/iso_iec_27701.md
-      - 'Device Advice: Comprehensive Regulatory Assistance': content/operators/medical_device/us/device_advice.md
+      - ? 'Cybersecurity in Medical Devices: Quality System Considerations and Content
+          of Premarket Submissions *Guidance for Industry and Food and Drug Administration
+          Staff*'
+        : content/operators/medical_device/us/fda_guidance.md
       - Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software *Guidance for Industry*: content/operators/medical_device/us/fda_2005.md
       - International Medical Device Regulators Forum (IMDRF) *Principles and Practices for Medical Device Cybersecurity*: content/operators/medical_device/us/imdrf_2020.md
-
+- About: content/about.md
+- Tags: tags.md

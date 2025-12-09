@@ -1,10 +1,9 @@
 ---
 tags:
-  - Switzerland
-  - Software
-  - Guideline
+- guideline
+- software
+- switzerland
 ---
-
 # eHealth Sussie - Guide for app developers, manufacturers and distributors
 
 The Guide for app developers, manufacturers and distributors issued by
