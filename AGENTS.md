@@ -262,3 +262,25 @@ uv add <package_name>
 2.  **Tags Page Update**:
     *   Updated `docs/tags.md` to include anchors for all standardized lowercase tags.
     *   Ensured all tags have a corresponding `<div id="tag:..."></div>` element.
+
+## 2025-12-09 11:15: Fix ISO Capitalization
+**Agent**: GitHub Copilot CLI
+**Task**: Ensure all references to ISO standards use capital "ISO" (e.g., "ISO 14971" instead of "iso_14971"), while keeping filenames lowercase.
+
+**Changes**:
+1.  **Automated Fixes**:
+    *   Created and ran `fix_iso.py` to scan all markdown files in `docs/content/`.
+    *   Replaced `[iso_XXXX]` and `[iso XXXX]` link labels with `[ISO XXXX]`.
+    *   This primarily fixed links in the newly created index pages where filenames were used as link text.
+
+## 2025-12-09 11:30: Add README
+**Agent**: GitHub Copilot CLI
+**Task**: Create a concise README.md for the project.
+
+**Changes**:
+1.  **Documentation**:
+    *   Created `README.md` with project overview, hosting info, development instructions (using `uv`), and contribution guidelines.
+    *   Removed duplicate tags within files.
+2.  **Tags Page Update**:
+    *   Updated `docs/tags.md` to include anchors for all standardized lowercase tags.
+    *   Ensured all tags have a corresponding `<div id="tag:..."></div>` element.
