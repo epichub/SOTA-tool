@@ -193,4 +193,18 @@ uv add <package_name>
     *   Added `Tags: tags.md` to the `nav` section in `mkdocs.yml`.
     *   Placed it after "About" to make it easily accessible.
 
+## 2025-12-09 10:00: Fix ReadTheDocs Build
+**Agent**: GitHub Copilot CLI
+**Task**: Fix ReadTheDocs build failure caused by missing `uv.lock` and incorrect `uv sync` command.
+
+**Changes**:
+1.  **ReadTheDocs Configuration**:
+    *   Updated `.readthedocs.yaml` to use `asdf` to install `uv` and configure the environment.
+    *   Set the install command to `UV_PROJECT_ENVIRONMENT="${READTHEDOCS_VIRTUALENV_PATH}" uv sync --frozen`.
+2.  **Git**:
+    *   Added `uv.lock` to git tracking and pushed it to the remote.
+    *   This resolves the "Unable to find lockfile" error during the build.
+    *   Note: Did not add `--group docs` to the `uv sync` command because dependencies are currently in the main group in `pyproject.toml`.
+
+
 
