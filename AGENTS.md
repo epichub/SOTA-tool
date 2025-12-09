@@ -280,7 +280,12 @@ uv add <package_name>
 **Changes**:
 1.  **Documentation**:
     *   Created `README.md` with project overview, hosting info, development instructions (using `uv`), and contribution guidelines.
-    *   Removed duplicate tags within files.
-2.  **Tags Page Update**:
-    *   Updated `docs/tags.md` to include anchors for all standardized lowercase tags.
-    *   Ensured all tags have a corresponding `<div id="tag:..."></div>` element.
+
+## 2025-12-09 11:45: Add GitHub Link and Fix Index Links
+**Agent**: GitHub Copilot CLI
+**Task**: Add link to GitHub repository on the main landing page and fix broken internal links in `docs/index.md`.
+
+**Changes**:
+1.  **Landing Page**:
+    *   Added text and link to the GitHub repository in `docs/index.md`.
+    *   Fixed broken links to `Manufacturers` and `Operators` sections in `docs/index.md` (pointing to `index.md` instead of old filenames).
